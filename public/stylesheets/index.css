@@ -7,6 +7,43 @@
   box-sizing: border-box;
   margin: 0;
   background: #e5e5e5;
+  font-family: 'Raleway';
+}
+
+.main-header-wrapper {
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  width: 50%;
+  height: auto;
+  z-index: 11;
+  background: transparent;
+}
+
+.main-row {
+  margin-bottom: 10%;
+  background: transparent;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.main-row h1 {
+  font-weight: 700;
+}
+
+.main-row > * {
+  background: transparent;
+}
+
+#quote-padding {
+  padding-left: 25%;
+}
+
+#quote-source {
+  font-weight: 700;
+  background: transparent;
+  font-size: inherit;
+  color: inherit;
 }
 
 .loader-wrapper {
@@ -47,6 +84,7 @@
 
 .video {
   z-index: -1;
+  background-size: cover;
 }
 
 .nav-wrapper {
@@ -149,7 +187,7 @@ a:hover {
 }
 
 .parallax {
-    min-height: 100vh;
+    min-height: 80vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

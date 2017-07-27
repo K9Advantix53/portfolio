@@ -34,3 +34,10 @@ $("#nav-toggle").click(function() {
 		$("#nav-toggle").css({ 'color': 'white' })
 	}
 })
+
+$("#projects-button").click(function() {
+	$(".nav-wrapper").fadeToggle();
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+    }, 700);
+});

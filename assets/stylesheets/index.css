@@ -1,0 +1,184 @@
+
+
+* {
+  width: 100%;
+  -webkit-margin-before:0em;
+  -webkit-margin-after:0em;
+  box-sizing: border-box;
+  margin: 0;
+  background: #e5e5e5;
+}
+
+.loader-wrapper {
+  height: 100vh;
+  width: 100%;
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  letter-spacing: 5px;
+  font-size: 30px;
+  color: #999;
+  align-self: center;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+#hide {
+  display: none;
+}
+
+.show {
+  display: unset;
+}
+
+.wrapper {
+  display: none;
+}
+
+#show {
+  visibility: visible;
+}
+
+.video {
+  z-index: -1;
+}
+
+.nav-wrapper {
+  z-index: 99;
+  position: fixed;
+  display: none;
+  min-height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  text-align: center;
+}
+
+.nav-container {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container ul {
+  padding-top: 100px;
+  text-align: center;
+  align-self: center;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+a {
+  font-size: 70px;
+  text-decoration: none;
+  color: #444444;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
+.black {
+  color: #444444;
+}
+
+#nav-toggle {
+  position: absolute;
+  font-size: 30px;
+  width: 5%;
+  cursor: crosshair;
+  z-index: 100;
+  font-family: 'Raleway';
+  background: transparent;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.white {
+  color: white;
+}
+
+.main-content {
+  min-height: 85vh;
+  max-height: 85vh;
+}
+
+.panel {
+  position: absolute;
+  background-color: transparent;
+  opacity: .7;
+  min-height: 25vh;
+  width: 33%;
+  padding: 50px;
+  z-index: 10;
+  position: absolute;
+  border-radius: 5px;
+  border: 2px;
+}
+
+.panel h3 {
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 10px;
+  padding-bottom: -50px;
+  mix-blend-mode: exclusion;
+}
+
+.one {
+}
+
+.two {
+  background-image: url("../images/trumpet.jpg");
+}
+
+.three {
+  background-image: url("../images/fenway.jpg")
+}
+
+.four {
+  background-image: url("../images/town-reflection.jpg")
+}
+
+.parallax {
+    min-height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.section {
+  min-height: 200px;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.section h3 {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.section p {
+  display: block;
+  text-align: justify;
+}
+
+.panel p {
+  padding: 20px;
+  text-align: justify;
+  text-align: center;
+}

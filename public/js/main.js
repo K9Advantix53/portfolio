@@ -37,7 +37,24 @@ $("#nav-toggle").click(function() {
 
 $("#projects-button").click(function() {
 	$(".nav-wrapper").fadeToggle();
-    $('html, body').animate({
-        scrollTop: $("#projects").offset().top
-    }, 700);
+	if ($("#nav-toggle").css('color') == 'rgb(0, 0, 0)') {
+		$("#nav-toggle").css({ 'color': 'white' })
+	} else {
+		$("#nav-toggle").css({ 'color': 'black' })
+	}
+  $('html, body').animate({
+      scrollTop: $("#projects").offset().top
+  }, 700);
+});
+
+$("#contact-button").click(function() {
+	$(".nav-wrapper").fadeToggle();
+	if ($("#nav-toggle").css('color') == 'rgb(0, 0, 0)') {
+		$("#nav-toggle").css({ 'color': 'white' })
+	} else {
+		$("#nav-toggle").css({ 'color': 'black' })
+	}
+  $('html, body').animate({
+      scrollTop: $("#contact-wrapper").offset().top
+  }, 700);
 });

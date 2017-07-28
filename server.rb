@@ -3,9 +3,9 @@ require 'sinatra'
 set :bind, '0.0.0.0'
 
 get "/" do
-  erb :index
+  send_file 'views/index.html'
 end
 
 get "/about" do
-  erb :about
+  send_file 'views/about.html'
 end

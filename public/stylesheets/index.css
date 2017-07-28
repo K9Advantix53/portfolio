@@ -42,8 +42,12 @@
 #quote-source {
   font-weight: 700;
   background: transparent;
-  font-size: inherit;
-  color: inherit;
+  font-size: 110%;
+  color: white;
+}
+
+#quote-source:hover {
+  color: black;
 }
 
 .loader-wrapper {
@@ -89,10 +93,10 @@
 
 .nav-wrapper {
   z-index: 99;
-  position: fixed;
+  position: absolute;
   display: none;
-  min-height: 100vh;
-  width: 100vw;
+  min-height: 100%;
+  width: 33vw;
   opacity: 1;
   text-align: center;
 }
@@ -101,11 +105,14 @@
   width: 300px;
   margin: 0 auto;
   display: flex;
+  position: relative;
+  text-align: center;
   justify-content: center;
 }
 
 .nav-container ul {
-  padding-top: 100px;
+  margin-top: 25vh;
+  position: absolute;
   text-align: center;
   align-self: center;
 }
@@ -171,15 +178,8 @@ a:hover {
   mix-blend-mode: exclusion;
 }
 
-.one {
-}
-
-.two {
-  background-image: url("../images/trumpet.jpg");
-}
-
 .three {
-  background-image: url("../images/fenway.jpg")
+  background-image: url("../images/synapse.png")
 }
 
 .four {
@@ -219,4 +219,13 @@ a:hover {
   padding: 20px;
   text-align: justify;
   text-align: center;
+}
+
+#projects {
+  min-height: 20vh;
+  padding-top: 8vh;
+}
+
+#projects h3 {
+  font-size: 150%;
 }

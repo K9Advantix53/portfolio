@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../public/stylesheets/index.css">
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/index.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
 </head>
 <body>
@@ -18,60 +18,104 @@
 
   <div class='main-content'>
 
-    <div class="parallax one">
-      <div id="nav-toggle" class='white'>X</div>
+    <div id="nav-toggle" class='white'>X</div>
 
-      <div class='nav-wrapper'>
-        <div class="nav-container">
-        	<ul>
-        		<li><a href="/about">about</a></li>
-        		<li><a id='projects-button'>projects</a></li>
-        		<li><a id='contact-button'>contact</a></li>
-        	</ul>
-        </div>
+    <div class='nav-wrapper' id='nav-bar'>
+      <div class="nav-container">
+        <ul>
+          <li><a id="about-button">about me</a></li>
+          <li><a id='projects-button'>projects</a></li>
+          <li><a id='collaborations-button'>collaborations</a></li>
+          <li><a id='contact-button'>contact</a></li>
+        </ul>
       </div>
+    </div>
+
+    <div class="parallax one">
 
       <div class="main-header-wrapper">
 				<div class="main-row">
 					<h1 style='user-select: none;'>"I Enjoy Code."</h1>
 				</div>
 				<div class="main-row">
-					<h6 id='quote-padding' style='user-select: none;'><a id='quote-source' href='/about'>-George Li</a> Full-Stack Web Developer</h6>
+					<h6 id='quote-padding' style='user-select: none;'><a id='quote-source' href='/about'>George Li</a> Full-Stack Web Developer</h6>
 				</div>
 			</div>
 
-      <video class='video' preload="auto" autoplay="" loop="" src="https://s3.us-east-2.amazonaws.com/gli-portfolio-assets/videos/porfolio-vid-4.mp4"><source src="" type="video/mp4">
+      <video class='video' preload="auto" autoplay="" loop="" src="https://s3.us-east-2.amazonaws.com/gli-portfolio-assets/videos/final-vid.mp4"><source src="" type="video/mp4">
         <source src='movie.mp4' type='video/mp4' />
       </video>
     </div>
 
-    <div class='section' id='projects'>
-      <h3>HYPE TECH PROJECTS</h3>
+
+    <div class='section' id='about-section'>
+      <h3>ABOUT ME</h3>
     </div>
 
-    <div class="parallax three">
+    <div class="about-page-wrapper">
+      <div class="panel" id='about-panel'>
+        I am a software/web developer looking for a position as a full-stack developer. I love all things logic and language-related and am excited to join a great team in the tech community!
+        <div class='pref' id='likes'>
+
+        </div>
+        <div class='pref' id='dislikes'>
+
+        </div>
+      </div>
+    </div>
+
+    <div class='section' id='projects'>
+      <h3>SOLO PROJECTS</h3>
+    </div>
+
+    <div class="parallax" id='synapse'>
       <div class='panel right'>
         <h3>SYNAPSE</h3>
-        <h4>synapse-coder.herokuapp.com</h4>
-        <h6>back-end focus</h6>
+        <div class='project-info'>
+          <a target="_blank" class='project-link' href="https://synapse-coder.herokuapp.com">Site</a> || <a class='project-link' target="_blank" href='https://github.com/K9Advantix53/synapse-connection'>Github</a>
+        </div>
         <p>
-          Synapse is a web application that will serve to connect developers with businesses. Users will be able to both create new projects and join existing projects as a developer. This web app features a React front end with a Rails backend and Postgres database. I also used the Google Maps API to generate dynamic maps, implemented ActionCable to set up live chats and made a React search engine.
+          Synapse is a web application that will serve to connect developers with businesses. Users will be able to both create new projects and join existing projects as a developer. This web app features a React front end with a Rails backend and Postgres database. I also used the Google Maps API to generate dynamic maps, implemented ActionCable to set up live chats and made a custom  search engine in React using RESTful APIs.
+        </p>
+        <p>
+          Created in a 2-week sprint for the final project of Launch Academy.
         </p>
       </div>
     </div>
 
     <div class='section'>
-      <h3>PARALLAX</h3>
-      <p>
-        Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.
-      </p>
     </div>
 
-    <div class="parallax four">
-      <div class='panel'>
-        <h3>I Game</h3>
+    <div class="parallax" id='dnd-planner'>
+      <div class='panel right'>
+        <h3>DnD Planner (In Progress)</h3>
+        <div class='project-info'>
+          <a class='project-link' target="_blank" href="http://greylockdnd.herokuapp.com">Site</a> || <a target="_blank" class='project-link' href='https://github.com/K9Advantix53/dnd-planner'>Github</a>
+        </div>
         <p>
-          Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.
+          DnD Planner is a web application that serves as an Dungeons and Dragons (5th Ed) encyclopedia and well as a character tracker. Users can look up spells, equipments, monsters, as well as the 12 starting character classes. DnD Planner is an exploration of external APIs, React.js conditional loaders, and a study of the React.js lifecycle.
+        </p>
+        <p>
+          Created due to an excess of page turning during game nights.
+        </p>
+      </div>
+    </div>
+
+    <div class='section' id='collaborations'>
+      <h3>COLLABORATIONS</h3>
+    </div>
+
+    <div class="parallax" id='color-coder'>
+      <div class='panel right'>
+        <h3>Color_Coder</h3>
+        <div class='project-info'>
+          <a class='project-link' target="_blank" href="https://colorcoder.herokuapp.com/">Site</a> || <a target="_blank" class='project-link' href='https://github.com/oliviaruizknott/color_coder'>Github</a>
+        </div>
+        <p>
+          Built as a collaborative group project during Launch Academy, Color_Coder is a review web site for colors that allows users to browse, add, and review colors. We used PostgreSQL to handle data storage, Rails to handle routing, and React.js to handle views. Learned
+        </p>
+        <p>
+          Created during a 2-week sprint
         </p>
       </div>
     </div>
@@ -88,7 +132,7 @@
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='../public/js/main.js'></script>
+<script src='../assets/js/main.js'></script>
 
 </body>
 </html>

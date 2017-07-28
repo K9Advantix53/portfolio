@@ -47,6 +47,30 @@ $("#projects-button").click(function() {
   }, 700);
 });
 
+$("#collaborations-button").click(function() {
+	$(".nav-wrapper").fadeToggle();
+	if ($("#nav-toggle").css('color') == 'rgb(0, 0, 0)') {
+		$("#nav-toggle").css({ 'color': 'white' })
+	} else {
+		$("#nav-toggle").css({ 'color': 'black' })
+	}
+  $('html, body').animate({
+      scrollTop: $("#collaborations").offset().top
+  }, 700);
+});
+
+$("#about-button").click(function() {
+	$(".nav-wrapper").fadeToggle();
+	if ($("#nav-toggle").css('color') == 'rgb(0, 0, 0)') {
+		$("#nav-toggle").css({ 'color': 'white' })
+	} else {
+		$("#nav-toggle").css({ 'color': 'black' })
+	}
+  $('html, body').animate({
+      scrollTop: $("#about-section").offset().top
+  }, 700);
+});
+
 $("#contact-button").click(function() {
 	$(".nav-wrapper").fadeToggle();
 	if ($("#nav-toggle").css('color') == 'rgb(0, 0, 0)') {

@@ -1,5 +1,3 @@
-
-
 * {
   width: 100%;
   -webkit-margin-before:0em;
@@ -91,28 +89,30 @@
   background-size: cover;
 }
 
+#nav-bar {
+
+}
+
 .nav-wrapper {
   z-index: 99;
   position: absolute;
   display: none;
-  min-height: 100%;
-  width: 33vw;
   opacity: 1;
   text-align: center;
 }
 
 .nav-container {
-  width: 300px;
   margin: 0 auto;
   display: flex;
-  position: relative;
+  position: fixed;
   text-align: center;
   justify-content: center;
+  min-width: 33vw;
+  max-width: 33vw;
+  min-height: 100vh;
 }
 
 .nav-container ul {
-  margin-top: 25vh;
-  position: absolute;
   text-align: center;
   align-self: center;
 }
@@ -128,6 +128,14 @@ a {
   color: #444444;
 }
 
+.project-info {
+  text-align: center;
+}
+
+.project-link {
+  font-size: 100%;
+}
+
 a:hover {
   text-decoration: line-through;
 }
@@ -137,7 +145,7 @@ a:hover {
 }
 
 #nav-toggle {
-  position: absolute;
+  position: fixed;
   font-size: 30px;
   width: 5%;
   cursor: crosshair;
@@ -178,12 +186,17 @@ a:hover {
   mix-blend-mode: exclusion;
 }
 
-.three {
-  background-image: url("../images/synapse.png")
+#synapse {
+  background-image: url("../images/synapse.png");
 }
 
-.four {
-  background-image: url("../images/town-reflection.jpg")
+#dnd-planner {
+  background-image: url("../images/dice.jpg");
+  background-size: cover;
+}
+
+#color-coder {
+  background-image: url('../images/color-coder.png');
 }
 
 .parallax {
@@ -226,6 +239,37 @@ a:hover {
   padding-top: 8vh;
 }
 
-#projects h3 {
+.section h3 {
   font-size: 150%;
+}
+
+.about-page-wrapper {
+  background: url('../images/ksoul.jpg');
+  min-height: 80vh;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+#about-section {
+  max-height: 100px;
+  padding-bottom: 0;
+  font-size: 4vh;
+}
+
+#about-contact {
+  background-color: #e5e5e5;
+}
+
+#about-panel {
+  background-color: #e5e5e5;
+}
+
+#collaborations {
+  min-height: 20vh;
+  padding-top: 8vh;
 }

@@ -47,18 +47,6 @@ $("#projects-button").click(function() {
   }, 700);
 });
 
-$("#collaborations-button").click(function() {
-	$(".nav-wrapper").fadeToggle();
-	if ($("#nav-toggle").css('color') == 'rgb(0, 0, 0)') {
-		$("#nav-toggle").css({ 'color': 'white' })
-	} else {
-		$("#nav-toggle").css({ 'color': 'black' })
-	}
-  $('html, body').animate({
-      scrollTop: $("#collaborations").offset().top
-  }, 700);
-});
-
 $("#about-button").click(function() {
 	$(".nav-wrapper").fadeToggle();
 	if ($("#nav-toggle").css('color') == 'rgb(0, 0, 0)') {
@@ -71,14 +59,28 @@ $("#about-button").click(function() {
   }, 700);
 });
 
-$("#contact-button").click(function() {
-	$(".nav-wrapper").fadeToggle();
-	if ($("#nav-toggle").css('color') == 'rgb(0, 0, 0)') {
-		$("#nav-toggle").css({ 'color': 'white' })
-	} else {
-		$("#nav-toggle").css({ 'color': 'black' })
-	}
-  $('html, body').animate({
-      scrollTop: $("#contact-wrapper").offset().top
-  }, 700);
+$('#quote-source').click(function() {
+	$("html, body").animate({
+		scrollTop: $("#about-section").offset().top
+	}, 700)
+})
+
+$("#home-button").click(function() {
+	$("html, body").animate({
+		scrollTop: $("#home").offset().top
+	}, 700)
+})
+
+$(window).scroll(function() {
+		var height = (parseInt($(".parallax").css('height') )*2) - 100
+    if ($(window).scrollTop() > height) {
+			$('#synapse-panel').fadeIn(700)
+    }
+});
+
+$(window).scroll(function() {
+		var height = (parseInt($(".parallax").css('height') )*3) - 200
+    if ($(window).scrollTop() > height) {
+			$('#dnd-planner-panel').fadeIn(700)
+    }
 });

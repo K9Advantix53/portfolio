@@ -145,6 +145,7 @@ a:hover {
 }
 
 #nav-toggle {
+  user-select: none;
   position: fixed;
   font-size: 30px;
   width: 5%;
@@ -152,8 +153,8 @@ a:hover {
   z-index: 100;
   font-family: 'Raleway';
   background: transparent;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 .white {
@@ -272,4 +273,25 @@ a:hover {
 #collaborations {
   min-height: 20vh;
   padding-top: 8vh;
+}
+
+#social {
+  display: flex;
+  justify-content: space-between;
+}
+
+#social div {
+  width: 33%;
+  text-align: center;
+}
+
+#synapse-panel {
+  display: none;
+  padding-top: 15vh;
+  max-width: 25vw;
+}
+
+#dnd-planner-panel {
+  display: none;
+  padding-top: 15vh;
 }

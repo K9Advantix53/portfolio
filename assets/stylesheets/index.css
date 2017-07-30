@@ -197,11 +197,11 @@ a:hover {
 }
 
 #color-coder {
-  background-image: url('../images/color-coder.png');
+  background-image: url('../images/color-coder.jpg');
 }
 
 .parallax {
-    min-height: 80vh;
+    min-height: 95vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -249,8 +249,8 @@ a:hover {
 }
 
 .about-page-wrapper {
-  background: url('https://dummyimage.com/1280x800/000/fff.png');
-  min-height: 80vh;
+  background: url('../images/about.jpg');
+  min-height: 95vh;
 
   background-attachment: fixed;
   background-position: center;
@@ -273,6 +273,10 @@ a:hover {
 
 #about-panel {
   background-color: #e5e5e5;
+  margin-left: 30%;
+  margin-top: 10vh;
+  font-size: 30px;
+  width: 50%;
 }
 
 #collaborations {
@@ -292,13 +296,27 @@ a:hover {
 
 #synapse-panel {
   display: none;
-  padding-top: 15vh;
-  max-width: 60vw;
+  padding-top: 10vh;
+  width: 60vw;
 }
 
 #dnd-planner-panel {
   display: none;
-  padding-top: 15vh;
+  padding-top: 10vh;
+}
+
+#contact-link a {
+  font-size: 25px;
+  color: black;
+}
+
+#nav-contacts-wrapper {
+  padding-top: 5vh;
+  display: flex;
+}
+
+#nav-contacts-wrapper div {
+  justify-content: space-between;
 }
 
 /*menu animation*/

@@ -4,13 +4,13 @@ function typeEffect(element, speed) {
 
 	var i = 0;
 	var timer = setInterval(function() {
-					if (i < text.length) {
-						$(element).append(text.charAt(i));
-						i++;
-					} else {
-						clearInterval(timer);
-					}
-				}, speed);
+		if (i < text.length) {
+			$(element).append(text.charAt(i));
+			i++;
+		} else {
+			clearInterval(timer);
+		}
+	}, speed);
 }
 
 $( document ).ready(function() {
@@ -28,35 +28,22 @@ window.onload=function() {
 
 $("#nav-toggle").click(function() {
   $(".nav-wrapper").fadeToggle();
-	if ($("#nav-toggle").css('color') == 'rgb(255, 255, 255)') {
-		$("#nav-toggle").css({ 'color': 'black' })
-	} else {
-		$("#nav-toggle").css({ 'color': 'white' })
-	}
 })
 
 $("#projects-button").click(function() {
 	$(".nav-wrapper").fadeToggle();
-	if ($("#nav-toggle").css('color') == 'rgb(0, 0, 0)') {
-		$("#nav-toggle").css({ 'color': 'white' })
-	} else {
-		$("#nav-toggle").css({ 'color': 'black' })
-	}
-  $('html, body').animate({
-      scrollTop: $("#projects").offset().top
-  }, 700);
+	$('#nav-icon').toggleClass('open');
+	$("html, body").animate({
+		scrollTop: $("#projects").offset().top
+	}, 700)
 });
 
 $("#about-button").click(function() {
 	$(".nav-wrapper").fadeToggle();
-	if ($("#nav-toggle").css('color') == 'rgb(0, 0, 0)') {
-		$("#nav-toggle").css({ 'color': 'white' })
-	} else {
-		$("#nav-toggle").css({ 'color': 'black' })
-	}
-  $('html, body').animate({
-      scrollTop: $("#about-section").offset().top
-  }, 700);
+	$('#nav-icon').toggleClass('open');
+	$("html, body").animate({
+		scrollTop: $("#about-section").offset().top
+	}, 700)
 });
 
 $('#quote-source').click(function() {
@@ -66,6 +53,8 @@ $('#quote-source').click(function() {
 })
 
 $("#home-button").click(function() {
+	$(".nav-wrapper").fadeToggle();
+	$('#nav-icon').toggleClass('open');
 	$("html, body").animate({
 		scrollTop: $("#home").offset().top
 	}, 700)
@@ -82,5 +71,12 @@ $(window).scroll(function() {
 		var height = (parseInt($(".parallax").css('height') )*3) - 200
     if ($(window).scrollTop() > height) {
 			$('#dnd-planner-panel').fadeIn(700)
+    }
+});
+
+$(window).scroll(function() {
+		var height = (parseInt($(".parallax").css('height') )*4) - 200
+    if ($(window).scrollTop() > height) {
+			$('#color-coder-panel').fadeIn(700)
     }
 });

@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   background: #e5e5e5;
-  font-family: 'Raleway';
+  font-family: 'Ubuntu';
 }
 
 .main-header-wrapper {
@@ -229,6 +229,10 @@ a:hover {
   text-align: justify;
 }
 
+#small-section {
+  min-height: 75px;
+}
+
 .panel p {
   padding: 20px;
   text-align: justify;
@@ -245,7 +249,7 @@ a:hover {
 }
 
 .about-page-wrapper {
-  background: url('../images/ksoul.jpg');
+  background: url('https://dummyimage.com/1280x800/000/fff.png');
   min-height: 80vh;
 
   background-attachment: fixed;
@@ -257,7 +261,8 @@ a:hover {
 }
 
 #about-section {
-  max-height: 100px;
+  min-height: 150px;
+  max-height: 150px;
   padding-bottom: 0;
   font-size: 4vh;
 }
@@ -288,10 +293,95 @@ a:hover {
 #synapse-panel {
   display: none;
   padding-top: 15vh;
-  max-width: 25vw;
+  max-width: 60vw;
 }
 
 #dnd-planner-panel {
   display: none;
   padding-top: 15vh;
+}
+
+/*menu animation*/
+
+#nav-icon {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 0 auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  background: transparent;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #000000;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+#nav-icon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
 }

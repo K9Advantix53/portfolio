@@ -28,6 +28,9 @@ window.onload=function() {
 
 $("#nav-toggle").click(function() {
   $(".nav-wrapper").fadeToggle();
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+	});
 })
 
 $("#projects-button").click(function() {

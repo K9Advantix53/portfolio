@@ -1,0 +1,145 @@
+.nav-wrapper {
+  z-index: 99;
+  position: absolute;
+  display: none;
+  opacity: 1;
+  text-align: center;
+}
+
+.nav-container {
+  margin: 0 auto;
+  display: flex;
+  position: fixed;
+  text-align: center;
+  justify-content: center;
+  min-width: 33vw;
+  max-width: 33vw;
+  min-height: 100vh;
+}
+
+.nav-container ul {
+  text-align: center;
+  align-self: center;
+}
+
+#nav-toggle {
+  user-select: none;
+  position: fixed;
+  font-size: 30px;
+  width: 5%;
+  cursor: crosshair;
+  z-index: 100;
+  font-family: 'Raleway';
+  background: transparent;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+#nav-contacts-wrapper {
+  padding-top: 5vh;
+  display: flex;
+}
+
+#nav-contacts-wrapper div {
+  justify-content: space-between;
+}
+
+#social {
+  display: flex;
+  justify-content: space-between;
+}
+
+#social div {
+  width: 33%;
+  text-align: center;
+}
+
+#contact-link a {
+  font-size: 25px;
+  color: black;
+}
+
+/*menu animation*/
+
+#nav-icon {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 0 auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  background: transparent;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #000000;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+#nav-icon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
+}

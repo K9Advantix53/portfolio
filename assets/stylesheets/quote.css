@@ -1,0 +1,14 @@
+#quote-padding {
+  padding-left: 25%;
+}
+
+#quote-source {
+  font-weight: 700;
+  background: transparent;
+  font-size: 110%;
+  color: white;
+}
+
+#quote-source:hover {
+  color: black;
+}

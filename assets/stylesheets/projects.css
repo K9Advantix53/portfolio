@@ -1,0 +1,41 @@
+.project-info {
+  text-align: center;
+}
+
+.project-link {
+  font-size: 100%;
+}
+
+#projects {
+  min-height: 20vh;
+  padding-top: 8vh;
+}
+
+#collaborations {
+  min-height: 20vh;
+  padding-top: 8vh;
+}
+
+#synapse {
+  background-image: url("../images/synapse.png");
+}
+
+#dnd-planner {
+  background-image: url("../images/dice.jpg");
+  background-size: cover;
+}
+
+#color-coder {
+  background-image: url('../images/color-coder.jpg');
+}
+
+#synapse-panel {
+  display: none;
+  padding-top: 10vh;
+  width: 60vw;
+}
+
+#dnd-planner-panel {
+  display: none;
+  padding-top: 10vh;
+}

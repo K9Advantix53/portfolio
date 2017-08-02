@@ -96,8 +96,8 @@ a:hover {
   position: absolute;
   background-color: transparent;
   opacity: .7;
-  min-height: 25vh;
-  width: 33%;
+  min-height: 100%;
+  width: 100%;
   padding: 50px;
   z-index: 10;
   position: absolute;

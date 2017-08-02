@@ -29,6 +29,10 @@
   background-image: url('../images/color-coder.jpg');
 }
 
+#color-coder-panel {
+  width: 60%;
+}
+
 #synapse-panel {
   display: none;
   padding-top: 10vh;
@@ -38,4 +42,5 @@
 #dnd-planner-panel {
   display: none;
   padding-top: 10vh;
+  width: 60%;
 }

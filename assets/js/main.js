@@ -80,3 +80,44 @@ $(window).scroll(function() {
 			$('#color-coder-panel').fadeIn(700)
     }
 });
+
+// about page slideshow
+
+$('#basics-button').click(function() {
+	var basicsStatus=$('.basics-panel').css('display');
+	var techStatus=$('.tech-stack-panel').css('display');
+	var extraStatus=$('.extra-panel').css('display');
+	if (basicsStatus=='none' && techStatus=='none' && extraStatus=='block') {
+		$('.extra-panel').fadeOut(500);
+		$('.basics-panel').fadeIn(500);
+	} else if (basicsStatus=='none' && techStatus=='block' && extraStatus=='none') {
+		$('.tech-stack-panel').fadeOut(500);
+		$('.basics-panel').fadeIn(500);
+	}
+})
+
+$('#tech-button').click(function() {
+	var basicsStatus=$('.basics-panel').css('display');
+	var techStatus=$('.tech-stack-panel').css('display');
+	var extraStatus=$('.extra-panel').css('display');
+	if (basicsStatus=='none' && techStatus=='none' && extraStatus=='block') {
+		$('.extra-panel').fadeOut(500);
+		$('.tech-stack-panel').fadeIn(500);
+	} else if (basicsStatus=='block' && techStatus=='none' && extraStatus=='none') {
+		$('.basics-panel').fadeOut(500);
+		$('.tech-stack-panel').fadeIn(500);
+	}
+})
+
+$('#extra-button').click(function() {
+	var basicsStatus=$('.basics-panel').css('display');
+	var techStatus=$('.tech-stack-panel').css('display');
+	var extraStatus=$('.extra-panel').css('display');
+	if (basicsStatus=='block' && techStatus=='none' && extraStatus=='none') {
+		$('.basics-panel').fadeOut(500);
+		$('.extra-panel').fadeIn(500);
+	} else if (basicsStatus=='none' && techStatus=='block' && extraStatus=='none') {
+		$('.tech-stack-panel').fadeOut(500);
+		$('.extra-panel').fadeIn(500);
+	}
+})

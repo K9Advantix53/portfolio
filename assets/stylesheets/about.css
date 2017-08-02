@@ -10,6 +10,19 @@
   position: relative;
 }
 
+.about-list li {
+  list-style-type: square;
+}
+
+.carousel-wrapper {
+  display: flex;
+  padding-bottom: 2vh;
+}
+
+.carousel-wrapper div {
+  text-align: center;
+}
+
 #about-section {
   min-height: 150px;
   max-height: 150px;
@@ -22,9 +35,78 @@
 }
 
 #about-panel {
+  opacity: 0.9;
+  padding-top: 0;
   background-color: #e5e5e5;
-  margin-left: 30%;
-  margin-top: 10vh;
   font-size: 30px;
+  width: 100%;
+  text-align: center;
+  text-align: justify;
+}
+
+#about-greeting {
+  margin: 3vh auto;
+}
+
+#about-picture-wrapper {
+  width: 100%;
+  min-height: 10vh;
+}
+
+#about-picture-wrapper img {
+  display: block;
+  width: auto;
+  height: 20vh;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px white solid;
+}
+
+#about-flex {
+  display: flex;
+  min-height: 30vh
+}
+
+#about-flex div {
   width: 50%;
+  background: transparent;
+}
+
+/*basics panel*/
+
+.basics-panel {
+}
+
+/*tech stack panel*/
+
+.tech-stack-panel {
+  display: none;
+}
+
+.tech-list {
+  text-align: center;
+  list-style-position: inside;
+}
+
+.tech-list li {
+  list-style-type: square;
+}
+
+#other-techs {
+  display: flex;
+}
+
+#other-techs div {
+  text-align: center;
+  width: 33%;
+}
+
+#other-techs div li {
+  list-style-type: square;
+}
+
+/*extra panel*/
+
+.extra-panel {
+  display: none;
 }

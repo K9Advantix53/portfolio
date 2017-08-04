@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>George Li</title>
-  <link rel="icon" href="../assets/images/github-logo.png" type="image/gif" sizes="16x16">
+  <link rel="icon" href="../assets/images/resume.png" type="image/gif" sizes="16x16">
   <link rel="stylesheet" type="text/css" href="../assets/stylesheets/index.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
@@ -32,9 +32,9 @@
     <div class='nav-wrapper' id='nav-bar'>
       <div class="nav-container">
         <ul>
-          <li><a id="home-button">home</a></li>
-          <li><a id="about-button">about</a></li>
-          <li><a id='projects-button'>projects</a></li>
+          <li><a class='left' id="home-button">home</a></li>
+          <li><a class='left' id="about-button">about</a></li>
+          <li><a class='left' id='projects-button'>projects</a></li>
           <li id='nav-contacts-wrapper'>
             <div>
               <a target="_blank" href='https://github.com/K9Advantix53'><img style='width: 32px; height: 32px;' src='../assets/images/github-logo.png'/></a>
@@ -51,7 +51,7 @@
 
       <div class="main-header-wrapper">
 				<div class="main-row">
-					<h1 style='user-select: none;'>I Enjoy Code.</h1>
+					<h1 style='user-select: none;'>I <span style='color: white; background: transparent;'>Enjoy</span> Code.</h1>
 				</div>
 				<div class="main-row">
 					<h6 id='quote-padding' style='user-select: none;'><a id='quote-source'>George Li</a> Full-Stack Web Developer</h6>
@@ -66,14 +66,14 @@
 
     <div class='section' id='about-section'>
       <h3>ABOUT</h3>
+      <div class='carousel-wrapper'>
+        <div id='basics-button' style='margin-right: 10%;'>Basics</div>
+        <div id='tech-button'>Tech Stack</div>
+      </div>
     </div>
 
     <div class="about-page-wrapper">
 
-      <div class='carousel-wrapper'>
-        <div id='basics-button'>Basics</div>
-        <div id='tech-button'>Tech Stack</div>
-      </div>
 
       <!-- basics panel -->
       <div class="panel basics-panel" id='about-panel'>
@@ -109,7 +109,7 @@
         </p>
         <div id='about-flex'>
           <div>
-            <p>Front-End:</p>
+            <p style='text-align: left;'>Front-End:</p>
             <ul class='tech-list'>
               <li>HTML5</li>
               <li>CSS3</li>
@@ -118,31 +118,26 @@
             </ul>
           </div>
           <div>
-            <p>Back-End:</p>
+            <p style='text-align: left;'>Back-End:</p>
             <ul class='tech-list'>
               <li>Ruby on Rails</li>
             </ul>
           </div>
         </div>
 
-        <div style='text-align: center; padding-bottom: 20px; font-size: 80%;'>
+        <div style='text-align: center; padding-bottom: 20px; font-size: 80%; margin-top: 5vh;'>
           Other Technologies
         </div>
 
-        <div id="other-techs" style='font-size: 70%;'>
+        <div id="other-techs" style='font-size: 60%;'>
           <div>
+            <li>RESTful/External APIs</li>
             <li>ActionCable</li>
-            <li>RESTful APIs</li>
-            <li>External APIs</li>
-          </div>
-          <div>
-            <li>Rspec (with Capybara)</li>
-            <li>Github</li>
-            <li>PostgreSQL</li>
-          </div>
-          <div>
             <li>JSON</li>
-            <li>Foundations CSS</li>
+          </div>
+          <div>
+            <li>PostgreSQL</li>
+            <li>Rspec (with Capybara)</li>
             <li>Google Maps API</li>
           </div>
         </div>

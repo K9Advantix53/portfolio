@@ -27,7 +27,6 @@
   position: fixed;
   font-size: 30px;
   width: 5%;
-  cursor: crosshair;
   z-index: 100;
   font-family: 'Raleway';
   background: transparent;
@@ -36,12 +35,13 @@
 }
 
 #nav-contacts-wrapper {
+  width: 50%;
   padding-top: 5vh;
   display: flex;
 }
 
 #nav-contacts-wrapper div {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #social {
@@ -142,4 +142,12 @@
   transform: rotate(-45deg);
   top: 39px;
   left: 8px;
+}
+
+.left {
+  float: left;
+  text-align: left;
+  align-items: left;
+  align-self: left;
+  align-content: left;
 }

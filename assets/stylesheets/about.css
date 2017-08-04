@@ -10,6 +10,13 @@
   position: relative;
 }
 
+.about-list {
+  margin-left: 25%;
+  list-style-position: inside;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
 .about-list li {
   list-style-type: square;
 }
@@ -50,7 +57,7 @@
 
 #about-picture-wrapper {
   width: 100%;
-  min-height: 10vh;
+  min-height: 15vh;
 }
 
 #about-picture-wrapper img {
@@ -74,10 +81,27 @@
 
 /*basics panel*/
 
-.basics-panel {
+#basics-button {
+  cursor: pointer;
+  transition: 500ms;
+}
+
+#basics-button:hover {
+  background: black;
+  color: white;
 }
 
 /*tech stack panel*/
+
+#tech-button {
+  cursor: pointer;
+  transition: 500ms;
+}
+
+#tech-button:hover {
+  background: black;
+  color: white;
+}
 
 .tech-stack-panel {
   display: none;
@@ -103,10 +127,4 @@
 
 #other-techs div li {
   list-style-type: square;
-}
-
-/*extra panel*/
-
-.extra-panel {
-  display: none;
 }

@@ -7,8 +7,6 @@
   background: transparent;
   font-size: 110%;
   color: white;
-}
-
-#quote-source:hover {
-  color: black;
+  text-shadow: 1px 1px #000000;
+  cursor: pointer;
 }

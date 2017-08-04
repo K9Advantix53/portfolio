@@ -73,6 +73,7 @@ a {
   font-size: 70px;
   text-decoration: none;
   color: #444444;
+  cursor: pointer;
 }
 
 a:hover {

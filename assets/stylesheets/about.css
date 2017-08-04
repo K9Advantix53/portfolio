@@ -22,8 +22,9 @@
 }
 
 .carousel-wrapper {
+  height: auto;
+  font-size: 3vh;
   display: flex;
-  padding-bottom: 2vh;
 }
 
 .carousel-wrapper div {
@@ -84,11 +85,11 @@
 #basics-button {
   cursor: pointer;
   transition: 500ms;
+  font-size: 70%;
 }
 
 #basics-button:hover {
-  background: black;
-  color: white;
+  font-size: 100%;
 }
 
 /*tech stack panel*/
@@ -96,11 +97,11 @@
 #tech-button {
   cursor: pointer;
   transition: 500ms;
+  font-size: 70%;
 }
 
 #tech-button:hover {
-  background: black;
-  color: white;
+  font-size: 100%;
 }
 
 .tech-stack-panel {
@@ -108,12 +109,12 @@
 }
 
 .tech-list {
-  text-align: center;
   list-style-position: inside;
 }
 
 .tech-list li {
   list-style-type: square;
+  font-size: 70%;
 }
 
 #other-techs {
@@ -122,7 +123,7 @@
 
 #other-techs div {
   text-align: center;
-  width: 33%;
+  width: 50%;
 }
 
 #other-techs div li {

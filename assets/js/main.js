@@ -32,6 +32,21 @@ window.onload=function() {
   }, 2000)
 };
 
+$(document).ready(function() {
+	var videoWrapperHeight = (parseFloat($('#video-wrapper').css('height')));
+	var videoWrapperWidth = (parseFloat($('#video-wrapper').css('width')));
+	$('#landing-video').height.css('height', videoWrapperHeight);
+	$('#landing-video').height.css('width', videoWrapperWidth);
+	$(window).resize(function() {
+		if ((parseFloat($('#video-wrapper').css('height'))) !== videoWrapperHeight || (parseFloat($('#video-wrapper').css('width'))) !== videoWrapperWidth) {
+			videoWrapperHeight = (parseFloat($('#video-wrapper').css('height')))
+			videoWrapperWidth = (parseFloat($('#video-wrapper').css('width')));
+			$('#landing-video').height.css('height', videoWrapperHeight);
+			$('#landing-video').height.css('width', videoWrapperWidth);
+		}
+	})
+})
+
 $("#nav-toggle").click(function() {
   $(".nav-wrapper").fadeToggle();
 })
